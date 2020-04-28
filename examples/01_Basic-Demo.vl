@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.94">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+  <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VL.Devices.Xbox360Controller" CanvasType="FullCategory">
+      <!--
+
+    ************************ Root ************************
+
+-->
+      <Node Name="Root" Category="IO.Xbox360Controller.Demo" Bounds="153,200" Id="TSttkfeJHQSN5gkEF54G9o">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Patch" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="CzjSvRY5dvXQDxmAOA8mZj">
+          <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" />
+          <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update" />
+          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
+            <Node Bounds="1083,160,365,13" Id="NTXsLcU7hyCOlzpZFGfYAi">
+              <p:NodeReference LastCategoryFullName="IO.Xbox360Controller" LastSymbolSource="VL.IO.Xbox360Controller.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Xbox360Controller (Vector)" />
+              </p:NodeReference>
+              <Pin Id="CIf6yZqYru1NKzoSzpHfg0" Name="User Index" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="SharpDX.XInput" LastSymbolSource="SharpDX.XInput.dll">
+                  <Choice Kind="TypeFlag" Name="UserIndex" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="OL8sBFDcYk8NSNz83qrHZW" Name="Left Thumbstick" Kind="OutputPin" />
+              <Pin Id="N2Lbh4decJGMw2QzuKTNLH" Name="Left Thumbstick Pressed" Kind="OutputPin" />
+              <Pin Id="A7Rs0vmsh8cNSSitkZvHGh" Name="Right Thumbstick" Kind="OutputPin" />
+              <Pin Id="SNf2fOtmu9iL6UbbfJEa4b" Name="Right Thumbstick Pressed" Kind="OutputPin" />
+              <Pin Id="JO52g0E7fDjMUPgHwm0OBS" Name="Left Trigger" Kind="OutputPin" />
+              <Pin Id="MedpDGmCsHSP5KLNgWzedI" Name="Left Shoulder Button" Kind="OutputPin" />
+              <Pin Id="S4i9G1vphLVP47SO7RCEHe" Name="Right Trigger" Kind="OutputPin" />
+              <Pin Id="PjYbwf9nKQCOimoXl4fywk" Name="Right Shoulder Button" Kind="OutputPin" />
+              <Pin Id="CZ8PETZGE8uP9K8AWzGFTU" Name="A Button" Kind="OutputPin" />
+              <Pin Id="Mvy55VOdnz4OublProqVFz" Name="B Button" Kind="OutputPin" />
+              <Pin Id="Q3SXq7AlhNiPftDaJB2mie" Name="X Button" Kind="OutputPin" />
+              <Pin Id="TCWtl31XCsgPz8pBzOBreO" Name="Y Button" Kind="OutputPin" />
+              <Pin Id="CdAN0DokkZiQLsf0mWsyaU" Name="D-Pad Up" Kind="OutputPin" />
+              <Pin Id="PCCnsg6JS6aMucNVwQAohU" Name="D-Pad Down" Kind="OutputPin" />
+              <Pin Id="JrGvT8HSwQFN6uKpdB3Dxd" Name="D-Pad Left" Kind="OutputPin" />
+              <Pin Id="TSvUM7SON4sNUbafnxbeJz" Name="D-Pad Right" Kind="OutputPin" />
+              <Pin Id="L3w9pIuiN3qMTw9qGDUYlV" Name="Start" Kind="OutputPin" />
+              <Pin Id="GZgN4HA8ps1Ldzwi2TVLzI" Name="Back" Kind="OutputPin" />
+              <Pin Id="Ok2Wy29sU9DNR2rLR37DOi" Name="Is Connected" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Uuj08Qh4AYsQF94QOKDLn8" Comment="User Index" Bounds="1085,81,60,19" ShowValueBox="true" isIOBox="true" Value="One">
+              <p:TypeAnnotation LastCategoryFullName="VL.Devices.Xbox360Controller" LastSymbolSource="VL.Devices.Xbox360Controller.vl">
+                <Choice Kind="TypeFlag" Name="UserIndex" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="1466,160,114,13" Id="S6Ts5juV8dzMxM6ifAIGBn">
+              <p:NodeReference LastCategoryFullName="IO.Xbox360Controller" LastSymbolSource="VL.IO.Xbox360Controller.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Xbox360Controller (State)" />
+              </p:NodeReference>
+              <Pin Id="NSYr9QdJPHZLa5V1oJwZ2d" Name="User Index" Kind="InputPin" />
+              <Pin Id="Ajn6OOkFv4oQA43YriDYU9" Name="Output" Kind="OutputPin" />
+              <Pin Id="KXXzrfOjb4dN0SbBxE8i3f" Name="Is Connected" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="659,160,405,13" Id="CzLwjFa3LphNYpn6qiMRXs">
+              <p:NodeReference LastCategoryFullName="IO.Xbox360Controller" LastSymbolSource="VL.IO.Xbox360Controller.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="IO" />
+                <Choice Kind="ProcessAppFlag" Name="Xbox360Controller" />
+              </p:NodeReference>
+              <Pin Id="HiqjfdbMZpEMAUb97IvPrG" Name="User Index" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="SharpDX.XInput" LastSymbolSource="SharpDX.XInput.dll">
+                  <Choice Kind="TypeFlag" Name="UserIndex" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="J9GiHlF4142LCvnrfJs5ob" Name="Left Thumbstick X" Kind="OutputPin" />
+              <Pin Id="U61nXTzNC4OM3VN7k5iQ2p" Name="Left Thumbstick Y" Kind="OutputPin" />
+              <Pin Id="CbY1aBrDEDGM40MOzScy5d" Name="Left Thumbstick Pressed" Kind="OutputPin" />
+              <Pin Id="FqhLeOH6uTQMW7QVqnq00B" Name="Right Thumbstick X" Kind="OutputPin" />
+              <Pin Id="BvwT3NiLjV9PihFVZHNsG1" Name="Right Thumbstick Y" Kind="OutputPin" />
+              <Pin Id="QxQd10bdobOP4KmTj4FWvV" Name="Right Thumbstick Pressed" Kind="OutputPin" />
+              <Pin Id="KZjSQZnCD5pMBFhYXpFmif" Name="Left Trigger" Kind="OutputPin" />
+              <Pin Id="LPSFuOurOeFMDDIf1vUom7" Name="Left Shoulder Button" Kind="OutputPin" />
+              <Pin Id="JGntLLcdYFBNbAtgjTBY51" Name="Right Trigger" Kind="OutputPin" />
+              <Pin Id="L53dHdn6hnYNRmnaAgiBD3" Name="Right Shoulder Button" Kind="OutputPin" />
+              <Pin Id="GXHKC0yX598Pau0JeqXtwp" Name="A Button" Kind="OutputPin" />
+              <Pin Id="QfJPK9P9FgFL8XH8OKkdB0" Name="B Button" Kind="OutputPin" />
+              <Pin Id="BgpCsRDjqK2OdsG6UfFDMO" Name="X Button" Kind="OutputPin" />
+              <Pin Id="QzuZj4Mky8TMyaaqYy9NCr" Name="Y Button" Kind="OutputPin" />
+              <Pin Id="NZBjBAjMFXRMepXdLuTK4B" Name="D-Pad Up" Kind="OutputPin" />
+              <Pin Id="UUkHo9xaYkRNOWFHbAxTrj" Name="D-Pad Down" Kind="OutputPin" />
+              <Pin Id="CC3GHODpBebLCsbjpAGwkR" Name="D-Pad Left" Kind="OutputPin" />
+              <Pin Id="F69aFRXew9jNPI4Bu3gMef" Name="D-Pad Right" Kind="OutputPin" />
+              <Pin Id="TLeCqqeizesNlfgmCxZl1M" Name="Start" Kind="OutputPin" />
+              <Pin Id="N0T45jzMs5XLVzSGtO4rD2" Name="Back" Kind="OutputPin" />
+              <Pin Id="V2Z8DR316xhM7ZjDnX4RZy" Name="Is Connected" Kind="OutputPin" />
+            </Node>
+            <Pad Id="JcROMinFxWiPsP3XfWvmVE" Bounds="659,33,461,30" ShowValueBox="true" isIOBox="true" Value="The Xbox360Controller node comes in 3 flavors">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">14</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="RI9dCO1FSCdO9NJBfHg563" Bounds="653,133,347,22" ShowValueBox="true" isIOBox="true" Value="Standard, which outputs all values as floats or booleans">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="VuCtfF7mTgbLuIzDi65aSk" Bounds="1075,133,349,22" ShowValueBox="true" isIOBox="true" Value="Vector, which outputs the thumbsticks as Vector2 values">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="TpzNWh3rgwxP2sWgbeyoIs" Bounds="1461,133,484,22" ShowValueBox="true" isIOBox="true" Value="and State, for when you need to pass the output around for performance reasons">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="1466,216,385,22" Id="A3upgTWdr11Mw2RlFYUkHW">
+              <p:NodeReference LastCategoryFullName="VL.Devices.Xbox360ControllerState" LastSymbolSource="VL.Devices.Xbox360Controller.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Split" />
+                <CategoryReference Kind="RecordType" Name="Xbox360ControllerState" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="N05Vcv2HPiPQLD0hOrUlNb" Name="Input" Kind="StateInputPin" />
+              <Pin Id="VxfzxSO9amuLl9UfRxvs20" Name="Left Thumbstick X" Kind="OutputPin" />
+              <Pin Id="V7u9U0Fa4L3PIz34JoT3RO" Name="Left Thumbstick Y" Kind="OutputPin" />
+              <Pin Id="PEtbaHISdXxOI29X4Qsrun" Name="Left Thumbstick Pressed" Kind="OutputPin" />
+              <Pin Id="A8VPEwi7vPfMQMFnuCNsn0" Name="Right Thumbstick X" Kind="OutputPin" />
+              <Pin Id="TlWqJVJYoRSLvFgqvQEwXU" Name="Right Thumbstick Y" Kind="OutputPin" />
+              <Pin Id="S2jcTaVvEs8PTeOB4kHdpD" Name="Right Thumbstick Pressed" Kind="OutputPin" />
+              <Pin Id="SEof2UmvY71ONilBNyAL4B" Name="Left Trigger" Kind="OutputPin" />
+              <Pin Id="OinArTzTobqO360YCIzulS" Name="Left Shoulder Button" Kind="OutputPin" />
+              <Pin Id="NWxy9jIIcwbLMoAjfaM2VY" Name="Right Trigger" Kind="OutputPin" />
+              <Pin Id="IMRhHyddKAyN9kbXk9O26J" Name="Right Shoulder Button" Kind="OutputPin" />
+              <Pin Id="I7mwBxgCd81OcPvdEaHg2x" Name="A Button" Kind="OutputPin" />
+              <Pin Id="F8CquDNEZhOPAgBy7KQRcP" Name="B Button" Kind="OutputPin" />
+              <Pin Id="FMSmzXiDKiALEHvzZumeSB" Name="X Button" Kind="OutputPin" />
+              <Pin Id="M6BAMLmBsrvO9Xu0DSKqjr" Name="Y Button" Kind="OutputPin" />
+              <Pin Id="HmZVFRXVAcYLYGhc8SB1Um" Name="D-Pad Up" Kind="OutputPin" />
+              <Pin Id="BuwLIlXuD3OQCsp5XG9smp" Name="D-Pad Down" Kind="OutputPin" />
+              <Pin Id="B89UbomiKZGLh0fGTEsJyl" Name="D-Pad Left" Kind="OutputPin" />
+              <Pin Id="TNdEn1H9ucbMq2d8ekdYuZ" Name="D-Pad Right" Kind="OutputPin" />
+              <Pin Id="ATgSKE80fPOMMiQzQP4446" Name="Start" Kind="OutputPin" />
+              <Pin Id="ElJVKIGcwUqQUC3hlp5Zwk" Name="Back" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1868,216,345,22" Id="CH5yc0Zfa0pOOo5TXunW8w">
+              <p:NodeReference LastCategoryFullName="IO.Xbox360Controller.Xbox360ControllerState" LastSymbolSource="VL.IO.Xbox360Controller.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Split (Vector)" />
+              </p:NodeReference>
+              <Pin Id="SZe7dCQnPsdOoz8g1HhYvx" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DqESrOEkT1JOv2oJrU9zt0" Name="Left Thumbstick" Kind="OutputPin" />
+              <Pin Id="McqzxkAoyzkOTqT2gx0k7E" Name="Left Thumbstick Pressed" Kind="OutputPin" />
+              <Pin Id="KpcEOd7O3BVPwuVvuL4Wdh" Name="Right Thumbstick" Kind="OutputPin" />
+              <Pin Id="PGFa8A1ecnLLBQvxNjeveO" Name="Right Thumbstick Pressed" Kind="OutputPin" />
+              <Pin Id="GUmIv5vodvaPBE3LXWBF3N" Name="Left Trigger" Kind="OutputPin" />
+              <Pin Id="Qt0rpvWjpzdMkijP7nL1ms" Name="Left Shoulder Button" Kind="OutputPin" />
+              <Pin Id="U1axlCwFKkQOIVwKC6iWCs" Name="Right Trigger" Kind="OutputPin" />
+              <Pin Id="NXWGM6IjBdRNL5oYyJWpNS" Name="Right Shoulder Button" Kind="OutputPin" />
+              <Pin Id="EOErCqsUsXhPlbyFPltUhM" Name="A Button" Kind="OutputPin" />
+              <Pin Id="GpTgOq5a5SLQGPlF0ygOn4" Name="B Button" Kind="OutputPin" />
+              <Pin Id="VbUn26wgbyBN8CJDoqJCRE" Name="X Button" Kind="OutputPin" />
+              <Pin Id="D54gCp9x3b6OBgzgPsOwqX" Name="Y Button" Kind="OutputPin" />
+              <Pin Id="CSx8Cpr4BILMVIDGrbJLb1" Name="D-Pad Up" Kind="OutputPin" />
+              <Pin Id="ViYmhuSkeiQNc9YikJvS34" Name="D-Pad Down" Kind="OutputPin" />
+              <Pin Id="TO903wyltT6QaKNfk4YIrV" Name="D-Pad Left" Kind="OutputPin" />
+              <Pin Id="Mvr8HqUK39zQOe3MorUNMK" Name="D-Pad Right" Kind="OutputPin" />
+              <Pin Id="O8Cyypq8YkVNWpvgdAVlxX" Name="Start" Kind="OutputPin" />
+              <Pin Id="Q8fwh6rQzBSLEjEl8SvZ93" Name="Back" Kind="OutputPin" />
+            </Node>
+            <Pad Id="JJ6rHX97t61NY8HeuPb0Bz" Comment="Is Connected" Bounds="1062,201,40,19" ShowValueBox="true" isIOBox="true" />
+          </Canvas>
+          <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
+            <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
+            <Fragment Id="PulIQZQ5YLtPp6C2yvbTNE" Patch="OkqGvJfa3PDOppp4PFQghD" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="E4YUShMq6OxN3qe9qSg2D3" Ids="Uuj08Qh4AYsQF94QOKDLn8,CIf6yZqYru1NKzoSzpHfg0" />
+          <Link Id="BA3jQaODkn3OG4LbaZ1mIP" Ids="Uuj08Qh4AYsQF94QOKDLn8,NSYr9QdJPHZLa5V1oJwZ2d" />
+          <Link Id="UXEOeMWonfHNzHYgpt33Ge" Ids="Uuj08Qh4AYsQF94QOKDLn8,HiqjfdbMZpEMAUb97IvPrG" />
+          <Link Id="M3BwEgr9cIlPIC4LsgUeJn" Ids="Ajn6OOkFv4oQA43YriDYU9,N05Vcv2HPiPQLD0hOrUlNb" />
+          <Link Id="ICyUNLULKutNyhmDMauA5N" Ids="Ajn6OOkFv4oQA43YriDYU9,SZe7dCQnPsdOoz8g1HhYvx" />
+          <Link Id="IVWGU5NtzZiPk1eR6KGipd" Ids="V2Z8DR316xhM7ZjDnX4RZy,JJ6rHX97t61NY8HeuPb0Bz" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <NugetDependency Id="QtqQUt6r7sJNKYBuxDce1f" Location="VL.Skia" Version="0.94.30-g7af1280a81" />
+  <DocumentDependency Id="RMYLf8o4pNFMQ9O5f1Oent" Location="../VL.IO.Xbox360Controller.vl" />
+</Document>

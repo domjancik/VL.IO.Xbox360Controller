@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>VL.IO.Xbox360Controller</id>
+    <version>1.0.0</version>
+    <authors>domj</authors>
+    <owners>domj</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/dominikjancik/VL.Devices.Xbox360Controller</projectUrl>
+    <description>VL wrapper for DXSharp.XInput adding nodes for the Xbox 360 Controller</description>
+    <summary>VL nodes for Xbox 360 controllers</summary>
+    <releaseNotes>First release</releaseNotes>
+    <language>en-US</language>
+    <tags>vl xbox360 devices controller</tags>
+    <dependencies>
+      <dependency id="SharpDX.XInput" version="4.2.0" />
+    </dependencies>
+  </metadata>
+</package>
