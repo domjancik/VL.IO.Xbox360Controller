@@ -1,0 +1,57 @@
+#---------------------------------#
+#      general configuration      #
+#---------------------------------#
+
+environment:
+  nuget_api_key:
+    secure: cbIlV8RqcFD1u4nVRzN/ftrCegoneLtDbTXHzlsT47q7RrZBKTIivkhAhr1pHJVJ
+
+# version format
+version: 1.0.{build}
+
+# clone directory
+clone_folder: c:\projects\VL.IO.Xbox360Controller
+
+branches:
+  only:
+    - master
+
+# enable patching of AssemblyInfo.* files
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "1.0.{build}"
+  assembly_file_version: "{version}"
+
+
+install:
+  - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+
+#---------------------------------#
+#       build configuration       #
+#---------------------------------#
+
+build_script:
+  - nuget pack appveyor\VL.IO.Xbox360Controller.nuspec -Version %APPVEYOR_BUILD_VERSION%
+  - nuget setApiKey %nuget_api_key%
+  - nuget push C:\projects\VL.IO.Xbox360Controller\VL.IO.Xbox360Controller.%APPVEYOR_BUILD_VERSION%.nupkg -Source https://api.nuget.org/v3/index.json
+    
+artifacts:
+  - path: '*.nupkg'
+    type: NuGetPackage
+  
+#---------------------------------#
+#         notifications           #
+#---------------------------------#
+
+test: off
+
+notifications:
+
+  # Email
+  - provider: Email
+    to:
+      - hi@domj.net
+    subject: 'VL.IO.Xbox360Controller Build {{status}}'  # optional
+    message: "{{message}}, {{commitId}}, ..."     # optional
+    on_build_status_changed: true    
